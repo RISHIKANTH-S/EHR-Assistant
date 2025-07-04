@@ -64,6 +64,7 @@ HealthCareAssistant/
 - Large files and indexes are ignored by git (see `.gitignore`).
 - If you need to rebuild FAISS indexes, use your data and the appropriate LangChain scripts.
 - For production, consider using a production-ready server (e.g., Gunicorn, Uvicorn) and securing your API keys.
+- Provided Datasets are broad, we only worked with patient, allergies knowledge bases. we provided data about medications,immunizations etc. Interested people can create tools on each knowledge base
 
 ## License
 MIT License
