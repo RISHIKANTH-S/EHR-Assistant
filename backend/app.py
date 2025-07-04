@@ -21,7 +21,9 @@ import datetime
 from fastapi.middleware.cors import CORSMiddleware"""
 app = Flask(__name__)
 
-OPENAI_API_KEY = "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"
+from dotenv import load_dotenv
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 llm = ChatOpenAI(model="gpt-3.5-turbo",
